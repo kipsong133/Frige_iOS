@@ -10,8 +10,11 @@ import SwiftUI
 import SwiftUI
 
 extension Color {
+    
     static let buttonBackgroundColor = Color("ButtonBackgroundColor")
     static let warmGreyTwo = Color("WarmGrey-Two")
+    
+    static let backgroundColorShowbottomSheet = Color("BottomSheetBackgroundColor")
     
     
     static let primaryShadow = Color.primary.opacity(0.2)
