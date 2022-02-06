@@ -15,11 +15,10 @@ struct OnboardingView: View {
     var bottomSheetDivider: CGFloat {
         UIScreen.main.bounds.height > 800 ? 2.5 : 1.8
     }
+    
     var offset: CGFloat {
         isShowSocialBottomView ? 0 : UIScreen.main.bounds.height / bottomSheetDivider
-
     }
-    
     
     var body: some View {
         
@@ -48,11 +47,9 @@ struct OnboardingView: View {
                 
                 // Button
                 startButton
-                
-                Spacer()
-                
-                
             }
+            .padding(.bottom, 54)
+                .edgesIgnoringSafeArea(.bottom)
             
             // bottomSheet
             socialLoginBottomSheet
@@ -116,12 +113,16 @@ extension OnboardingView {
             self.isShowSocialBottomView = true
             
         }) { // label
-            Text("시작하기")
-                .foregroundColor(.white)
-                .padding(.horizontal, 150)
-                .padding(.vertical, 20)
-                .background(Color.buttonBackgroundColor)
-                .cornerRadius(8)
+            HStack {
+                Text("시작하기")
+                    .foregroundColor(.white)
+                    .frame(
+                        width: UIScreen.main.bounds.width - 48,
+                        height: 54,
+                        alignment: .center)
+                    .background(Color.buttonBackgroundColor)
+                    .cornerRadius(8)
+            }
         }
     }
     
