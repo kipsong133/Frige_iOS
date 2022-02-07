@@ -9,6 +9,9 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    // Touring-Service View will show
+    @State private var isTouringViewShow = false
+    
     // Show View that user can choose social-login
     // Apple or Kakao
     @State private var isShowSocialBottomView = false
@@ -23,6 +26,13 @@ struct OnboardingView: View {
     var body: some View {
         
         ZStack {
+            if isTouringViewShow {
+                TouringServiceFirstView()
+                    .zIndex(1)
+                    .transition(.opacity)
+            }
+            
+            
             if isShowSocialBottomView {
                 Color.backgroundColorShowbottomSheet
                     .edgesIgnoringSafeArea(.all)
@@ -31,7 +41,7 @@ struct OnboardingView: View {
 
             VStack(alignment: .center) {
                 
-                guestModeButton
+                touringServiceButton
                 
                 Spacer()
                 
@@ -126,9 +136,11 @@ extension OnboardingView {
         }
     }
     
-    var guestModeButton: some View {
+    var touringServiceButton: some View {
         Button(action: {
-            
+            withAnimation {
+                self.isTouringViewShow = true
+            }
         }) {
             HStack {
                 Spacer()
