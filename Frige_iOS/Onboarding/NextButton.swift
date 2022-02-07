@@ -10,11 +10,13 @@ import SwiftUI
 struct NextButton: View {
     
     let title: String
-    var action: () -> Void = { }
+    @Binding var index: Int
     
     var body: some View {
         Button(action: {
-            action()
+            withAnimation {
+                index += 1
+            }
         }) { // label
             HStack {
                 Text(title)
@@ -32,6 +34,6 @@ struct NextButton: View {
 
 struct NextButton_Previews: PreviewProvider {
     static var previews: some View {
-        NextButton(title: "시작하기")
+        NextButton(title: "시작하기", index: .constant(1))
     }
 }
