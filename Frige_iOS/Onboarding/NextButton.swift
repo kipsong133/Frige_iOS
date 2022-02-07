@@ -15,7 +15,7 @@ struct NextButton: View {
     var body: some View {
         Button(action: {
             withAnimation {
-                index += 1
+                index < 3 ? (index += 1) : (index = 3)
             }
         }) { // label
             HStack {

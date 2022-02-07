@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TouringServiceFirstView: View {
     
+    @Binding var isShow: Bool
     @State private var currentPageIndex = 0
     
     let screen = UIScreen.main.bounds
@@ -39,7 +40,6 @@ struct TouringServiceFirstView: View {
                 Spacer()
                 
                 HStack {
-                    
                     if currentPageIndex == 0 {
                         Image("Onboarding_AI")
                             .resizable()
@@ -81,7 +81,7 @@ struct TouringServiceFirstView: View {
                     }
                 }
                 .frame(width: screen.width,
-                       height: 194.7)
+                       height: 194.7 * ( screen.height / 812))
                 
                 Group {
                     Text(pageTitleArr[currentPageIndex])
@@ -96,8 +96,6 @@ struct TouringServiceFirstView: View {
                 }
                 .animation(nil)
 
-                    
-                
                 Spacer()
                 
                 HStack {
@@ -118,8 +116,8 @@ struct TouringServiceFirstView: View {
 struct TouringServiceFirstView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TouringServiceFirstView()
-            TouringServiceFirstView()
+            TouringServiceFirstView(isShow: .constant(true))
+            TouringServiceFirstView(isShow: .constant(true))
                 .previewDevice("iPhone 13 Pro Max")
         }
     }
@@ -129,7 +127,9 @@ extension TouringServiceFirstView {
     var xButton: some View {
         HStack {
             Spacer()
-            Button(action: {}) {
+            Button(action: {
+                self.isShow = false
+            }) {
                 Image(systemName: "x.circle")
                     .resizable()
                     .scaledToFit()

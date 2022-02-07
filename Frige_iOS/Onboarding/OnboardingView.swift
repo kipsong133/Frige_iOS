@@ -27,7 +27,7 @@ struct OnboardingView: View {
         
         ZStack {
             if isTouringViewShow {
-                TouringServiceFirstView()
+                TouringServiceFirstView(isShow: $isTouringViewShow)
                     .zIndex(1)
                     .transition(.opacity)
             }
@@ -258,6 +258,3 @@ extension OnboardingView {
         }.zIndex(1)
     }
 }
-
-
-
