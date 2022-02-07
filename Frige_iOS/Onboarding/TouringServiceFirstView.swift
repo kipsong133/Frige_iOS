@@ -13,23 +13,36 @@ struct TouringServiceFirstView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "x.circle")
+
+            xButton
+            
+            Spacer()
             
             Image("Onboarding_AI")
+                .padding(.bottom, 27.6)
             
             Text("AI 영수증 인식")
+                .font(.system(size: 28, weight: .bold))
+                .padding(.bottom, 13)
             
             Text("찰각! 카메라 버튼만 누르면\n식재료를 손쉽게 등록할 수 있어요.")
+                .font(.system(size: 18, weight: .regular))
                 .multilineTextAlignment(.center)
+                .lineSpacing(2)
+            
+            Spacer()
 
             CustomPageIndicator(pageIndex: $currentPageIndex)
-
-            Button(action: {
-                
-            }) {
-                Text("다음")
+            
+            Spacer()
+            
+            NextButton(title: "다음") { // action
+                print("TEST")
             }
+            .padding(.bottom, 54)
         }
+        
+        .edgesIgnoringSafeArea(.all)
         
     }
 }
@@ -40,6 +53,24 @@ struct TouringServiceFirstView_Previews: PreviewProvider {
             TouringServiceFirstView()
             TouringServiceFirstView()
                 .previewDevice("iPhone 13 Pro Max")
+        }
+    }
+}
+
+extension TouringServiceFirstView {
+    var xButton: some View {
+        HStack {
+            Spacer()
+            Button(action: {}) {
+                Image(systemName: "x.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
+                    .fixedSize()
+                    .foregroundColor(.gray)
+                    .padding(.top, 57)
+                    .padding(.trailing, 19)
+            }
         }
     }
 }
