@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		252F599E27B11D3300FDEC57 /* PagingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F599D27B11D3300FDEC57 /* PagingExample.swift */; };
+		255B007027B377EF009424CF /* SetUpNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B006F27B377EF009424CF /* SetUpNickNameView.swift */; };
 		2595B52E27AF6609004084A4 /* Frige_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */; };
 		2595B53027AF6609004084A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595B52F27AF6609004084A4 /* ContentView.swift */; };
 		2595B53227AF6609004084A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2595B53127AF6609004084A4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		252F599D27B11D3300FDEC57 /* PagingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingExample.swift; sourceTree = "<group>"; };
+		255B006F27B377EF009424CF /* SetUpNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpNickNameView.swift; sourceTree = "<group>"; };
 		2595B52A27AF6609004084A4 /* Frige_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frige_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frige_iOSApp.swift; sourceTree = "<group>"; };
 		2595B52F27AF6609004084A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		255B006D27B375E6009424CF /* SubComponent */ = {
+			isa = PBXGroup;
+			children = (
+				25B5209A27B1038600F31C84 /* NextButton.swift */,
+				25C896D927AF8AD2000EB3AA /* BottomSheetView.swift */,
+				25B5209827B0FB2C00F31C84 /* CustomPageIndicator.swift */,
+			);
+			path = SubComponent;
+			sourceTree = "<group>";
+		};
+		255B006E27B377D4009424CF /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				255B006F27B377EF009424CF /* SetUpNickNameView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		2595B52127AF6609004084A4 = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +94,10 @@
 				25B5209527B0EC3400F31C84 /* Temp */,
 				2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */,
 				2595B52F27AF6609004084A4 /* ContentView.swift */,
+				25C896D727AF7F83000EB3AA /* CornerStyle.swift */,
 				25C896D327AF6A9A000EB3AA /* Color+Extension.swift */,
 				25B5209227B0EAB700F31C84 /* Onboarding */,
-				25C896D727AF7F83000EB3AA /* CornerStyle.swift */,
+				255B006E27B377D4009424CF /* Registration */,
 				25C896D527AF7E24000EB3AA /* View+Extension.swift */,
 				2595B53127AF6609004084A4 /* Assets.xcassets */,
 				2595B53327AF6609004084A4 /* Preview Content */,
@@ -96,10 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2595B53B27AF6663004084A4 /* OnboardingView.swift */,
-				25B5209A27B1038600F31C84 /* NextButton.swift */,
-				25C896D927AF8AD2000EB3AA /* BottomSheetView.swift */,
 				25B5209327B0EAE700F31C84 /* TouringServiceFirstView.swift */,
-				25B5209827B0FB2C00F31C84 /* CustomPageIndicator.swift */,
+				255B006D27B375E6009424CF /* SubComponent */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -188,6 +207,7 @@
 				2595B53027AF6609004084A4 /* ContentView.swift in Sources */,
 				25C896D827AF7F83000EB3AA /* CornerStyle.swift in Sources */,
 				25B5209727B0EC3D00F31C84 /* TransitionExampleView.swift in Sources */,
+				255B007027B377EF009424CF /* SetUpNickNameView.swift in Sources */,
 				25C896D627AF7E24000EB3AA /* View+Extension.swift in Sources */,
 				25B5209427B0EAE700F31C84 /* TouringServiceFirstView.swift in Sources */,
 				25B5209B27B1038600F31C84 /* NextButton.swift in Sources */,

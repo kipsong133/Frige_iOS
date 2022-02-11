@@ -11,11 +11,12 @@ struct NextButton: View {
     
     let title: String
     @Binding var index: Int
+    @Binding var isShow: Bool
     
     var body: some View {
         Button(action: {
             withAnimation {
-                index < 3 ? (index += 1) : (index = 3)
+                index < 3 ? (index += 1) : (isShow = false)
             }
         }) { // label
             HStack {
@@ -34,6 +35,8 @@ struct NextButton: View {
 
 struct NextButton_Previews: PreviewProvider {
     static var previews: some View {
-        NextButton(title: "시작하기", index: .constant(1))
+        NextButton(title: "시작하기",
+                   index: .constant(1),
+                   isShow: .constant(true))
     }
 }

@@ -15,7 +15,11 @@ extension Color {
     static let warmGreyTwo = Color("WarmGrey-Two")
     
     static let backgroundColorShowbottomSheet = Color("BottomSheetBackgroundColor")
+    
+    /// R:51 G:51 B:51
     static let darkGray = Color("DarkGray")
+    
+    static let mangoTwo = Color("Mango-Two")
     
     static let primaryShadow = Color.primary.opacity(0.2)
     static let secondaryText = Color(hex: "#6e6e6e")

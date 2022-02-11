@@ -8,7 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showRegisterView = true
+    
     var body: some View {
+        
+        if showRegisterView {
+            
+            SetUpNickNameView()
+                .onAppear {
+                    UITextField.appearance().clearButtonMode = .whileEditing
+                }
+            
+        } else {
+            
+        }
         OnboardingView()
     }
 }

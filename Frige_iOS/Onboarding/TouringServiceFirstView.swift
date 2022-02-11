@@ -99,13 +99,16 @@ struct TouringServiceFirstView: View {
                 Spacer()
                 
                 HStack {
-                    CustomPageIndicator(pageIndex: $currentPageIndex)
+                    CustomPageIndicator(pageIndex: $currentPageIndex, maxCount: 4)
                 }
                 .frame(width: screen.width, height: 8)
 
                 Spacer()
                 
-                NextButton(title: "다음", index: $currentPageIndex)
+                NextButton(
+                    title: currentPageIndex == 3 ? "완료" : "다음",
+                    index: $currentPageIndex,
+                    isShow: $isShow)
                     .padding(.bottom, 54)
             }
         }
