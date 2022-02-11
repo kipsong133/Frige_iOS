@@ -136,7 +136,7 @@ struct RegisterNextButton: View {
             Text("다음")
                 .foregroundColor(.white)
                 .padding(.horizontal, UIScreen.main.bounds.width / 2.4)
-                .padding(.vertical, 15)
+                .padding(.vertical, 18)
                 .background(Color.darkGray)
                 .cornerRadius(25)
         }
