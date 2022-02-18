@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct FrigeView: View {
+    
+    let screen = UIScreen.main.bounds
+    
+    var frigeHeight: CGFloat {
+        return CGFloat(screen.height * 0.612)
+    }
+    
     var body: some View {
         ZStack {
             VStack {
@@ -38,16 +45,15 @@ struct FrigeView: View {
                 }
                 borderLine
                 
+                Spacer()
                 // 냉장고 UI
                 ZStack {
                     // width와 height 값을 하위 냉장고에 주입해줄 것.
-                    TwoDoorHorizontalFrigeTypeView()
+                    TwoDoorHorizontalFrigeTypeView(height: frigeHeight)
     //                FourDoorBalanceFrigeTypeView()
     //                TwoDoorVerticalFrigeTypeView()
     //                ThreeDoorVerticalFrigeTypeView()
                 }
-                
-                
                 Spacer()
             }
             

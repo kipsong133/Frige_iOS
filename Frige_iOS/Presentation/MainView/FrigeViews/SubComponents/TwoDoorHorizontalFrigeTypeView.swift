@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TwoDoorHorizontalFrigeTypeView: View {
     
-    let height = CGFloat(500)
+    var height = CGFloat(500)
     let width = CGFloat(274)
     
     var body: some View {

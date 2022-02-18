@@ -20,8 +20,10 @@ struct ContentView: View {
                     UITextField.appearance().clearButtonMode = .whileEditing
                 }
             
+            
         } else {
             MainTabView()
+
         }
 //        OnboardingView()
     }
