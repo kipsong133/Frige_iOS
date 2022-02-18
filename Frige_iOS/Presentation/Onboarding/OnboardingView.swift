@@ -80,7 +80,7 @@ struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             OnboardingView()
-                .previewDevice("iPhone 8")
+                .previewDevice("iPhone 11 Pro")
                 .preferredColorScheme(.light)
             
             
@@ -170,7 +170,6 @@ extension OnboardingView {
             }
             .foregroundColor(.black)
             .padding(.horizontal, 10)
-
             naverButton
             Spacer()
                 

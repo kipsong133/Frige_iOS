@@ -44,7 +44,9 @@ struct TouringServiceFirstView: View {
                         Image("Onboarding_AI")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 287.4 * (UIScreen.main.bounds.height / 812),
+                            .frame(
+
+                                height: 215 * (UIScreen.main.bounds.height / 812),
                                    alignment: .center)
                             .padding(.bottom, 27.6)
                             .transition(.leftToRightTransition)

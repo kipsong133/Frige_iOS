@@ -12,7 +12,7 @@ struct ChooseFrigeView: View {
     
     var gridItemLayout = [GridItem(.flexible(), spacing: 10, alignment: .trailing), GridItem(.flexible(), spacing: 10, alignment: .leading)]
     
-    @State private var selectedFrige = 0
+    @State private var selectedFrigeIndex = 0
     let screenSize = UIScreen.main.bounds.size
     
     var body: some View {
@@ -20,13 +20,11 @@ struct ChooseFrigeView: View {
             VStack {
                 
                 pageIndicator
-//                    .padding(.top, 40)
                 
                 Spacer()
-//                    .frame(maxHeight: 43)
                 
                 titleText
-//                    .padding(.bottom, 28)
+
                 Spacer()
 
                 // Grid 3 x 2
@@ -37,22 +35,21 @@ struct ChooseFrigeView: View {
                               spacing: 10) {
                         ForEach(1..<7) { index in
                             ZStack {
-                                Color.whiteThree
+                                (selectedFrigeIndex == index
+                                ? Color.selectedMangoColor : Color.whiteThree)
                                 Image("MiniFrige01")
-
                             }
                             .frame(
                                 width: screenSize.width * (123 / 375),
                                 height: screenSize.width * (123 / 375))
-//                                width: 110,
-//                                height: 110)
                             .cornerRadius(20)
+                            .onTapGesture {
+                                selectedFrigeIndex = index
+                            }
                         }
                     }
                     Spacer()
                 }
-                
-                
                 Spacer()
                 
                 // nextButton
@@ -70,6 +67,7 @@ struct ChooseFrigeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ChooseFrigeView(currentPageIndex: .constant(1))
+                .previewDevice("iPhone 11 Pro")
             ChooseFrigeView(currentPageIndex: .constant(1))
                 .previewDevice("iPhone 13 Pro Max")
         }

@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252774D627B7CE3D0056122D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252774D527B7CE3D0056122D /* MainTabView.swift */; };
+		252774D827B7E0AD0056122D /* FrigeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252774D727B7E0AD0056122D /* FrigeView.swift */; };
 		252F599E27B11D3300FDEC57 /* PagingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252F599D27B11D3300FDEC57 /* PagingExample.swift */; };
+		254F250727BF7EDE0046432A /* TwoDoorHorizontalFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F250627BF7EDE0046432A /* TwoDoorHorizontalFrigeTypeView.swift */; };
+		254F250B27BF83480046432A /* FourDoorBalanceFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F250A27BF83480046432A /* FourDoorBalanceFrigeTypeView.swift */; };
+		254F250E27BF872F0046432A /* FrigeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F250D27BF872F0046432A /* FrigeType.swift */; };
+		254F251027BF88930046432A /* TwoDoorVerticalFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F250F27BF88930046432A /* TwoDoorVerticalFrigeTypeView.swift */; };
+		254F251227BF89B40046432A /* FourDoorUnBalanceFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F251127BF89B40046432A /* FourDoorUnBalanceFrigeTypeView.swift */; };
+		254F251427BF8B740046432A /* ThreeDoorVerticalFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F251327BF8B740046432A /* ThreeDoorVerticalFrigeTypeView.swift */; };
+		254F251627BF8E8D0046432A /* ThreeDoorHorizontalFrigeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F251527BF8E8D0046432A /* ThreeDoorHorizontalFrigeTypeView.swift */; };
 		2552ACED27B6813A000DA51F /* ChooseFrigeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2552ACEC27B6813A000DA51F /* ChooseFrigeView.swift */; };
 		255B007027B377EF009424CF /* SetUpNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B006F27B377EF009424CF /* SetUpNickNameView.swift */; };
 		2595B52E27AF6609004084A4 /* Frige_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */; };
@@ -26,7 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252774D527B7CE3D0056122D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		252774D727B7E0AD0056122D /* FrigeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrigeView.swift; sourceTree = "<group>"; };
 		252F599D27B11D3300FDEC57 /* PagingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingExample.swift; sourceTree = "<group>"; };
+		254F250627BF7EDE0046432A /* TwoDoorHorizontalFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDoorHorizontalFrigeTypeView.swift; sourceTree = "<group>"; };
+		254F250A27BF83480046432A /* FourDoorBalanceFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourDoorBalanceFrigeTypeView.swift; sourceTree = "<group>"; };
+		254F250D27BF872F0046432A /* FrigeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrigeType.swift; sourceTree = "<group>"; };
+		254F250F27BF88930046432A /* TwoDoorVerticalFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDoorVerticalFrigeTypeView.swift; sourceTree = "<group>"; };
+		254F251127BF89B40046432A /* FourDoorUnBalanceFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourDoorUnBalanceFrigeTypeView.swift; sourceTree = "<group>"; };
+		254F251327BF8B740046432A /* ThreeDoorVerticalFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDoorVerticalFrigeTypeView.swift; sourceTree = "<group>"; };
+		254F251527BF8E8D0046432A /* ThreeDoorHorizontalFrigeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDoorHorizontalFrigeTypeView.swift; sourceTree = "<group>"; };
 		2552ACEC27B6813A000DA51F /* ChooseFrigeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFrigeView.swift; sourceTree = "<group>"; };
 		255B006F27B377EF009424CF /* SetUpNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpNickNameView.swift; sourceTree = "<group>"; };
 		2595B52A27AF6609004084A4 /* Frige_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frige_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +74,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252774D227B7CDF30056122D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				252774D527B7CE3D0056122D /* MainTabView.swift */,
+				254F250827BF830B0046432A /* FrigeViews */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		252774D327B7CE0B0056122D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				25C896D727AF7F83000EB3AA /* CornerStyle.swift */,
+				25C896D527AF7E24000EB3AA /* View+Extension.swift */,
+				25C896D327AF6A9A000EB3AA /* Color+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		252774D427B7CE1D0056122D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */,
+				2595B52F27AF6609004084A4 /* ContentView.swift */,
+				252774D227B7CDF30056122D /* MainView */,
+				25B5209227B0EAB700F31C84 /* Onboarding */,
+				255B006E27B377D4009424CF /* Registration */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		254F250827BF830B0046432A /* FrigeViews */ = {
+			isa = PBXGroup;
+			children = (
+				252774D727B7E0AD0056122D /* FrigeView.swift */,
+				254F250927BF83130046432A /* SubComponents */,
+			);
+			path = FrigeViews;
+			sourceTree = "<group>";
+		};
+		254F250927BF83130046432A /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				254F250627BF7EDE0046432A /* TwoDoorHorizontalFrigeTypeView.swift */,
+				254F250A27BF83480046432A /* FourDoorBalanceFrigeTypeView.swift */,
+				254F250F27BF88930046432A /* TwoDoorVerticalFrigeTypeView.swift */,
+				254F251127BF89B40046432A /* FourDoorUnBalanceFrigeTypeView.swift */,
+				254F251527BF8E8D0046432A /* ThreeDoorHorizontalFrigeTypeView.swift */,
+				254F251327BF8B740046432A /* ThreeDoorVerticalFrigeTypeView.swift */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		254F250C27BF87200046432A /* GlobalType */ = {
+			isa = PBXGroup;
+			children = (
+				254F250D27BF872F0046432A /* FrigeType.swift */,
+			);
+			path = GlobalType;
+			sourceTree = "<group>";
+		};
 		255B006D27B375E6009424CF /* SubComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,14 +173,10 @@
 		2595B52C27AF6609004084A4 /* Frige_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				254F250C27BF87200046432A /* GlobalType */,
 				25B5209527B0EC3400F31C84 /* Temp */,
-				2595B52D27AF6609004084A4 /* Frige_iOSApp.swift */,
-				2595B52F27AF6609004084A4 /* ContentView.swift */,
-				25C896D727AF7F83000EB3AA /* CornerStyle.swift */,
-				25C896D327AF6A9A000EB3AA /* Color+Extension.swift */,
-				25B5209227B0EAB700F31C84 /* Onboarding */,
-				255B006E27B377D4009424CF /* Registration */,
-				25C896D527AF7E24000EB3AA /* View+Extension.swift */,
+				252774D327B7CE0B0056122D /* Helper */,
+				252774D427B7CE1D0056122D /* Presentation */,
 				2595B53127AF6609004084A4 /* Assets.xcassets */,
 				2595B53327AF6609004084A4 /* Preview Content */,
 			);
@@ -206,18 +281,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				252F599E27B11D3300FDEC57 /* PagingExample.swift in Sources */,
+				254F250727BF7EDE0046432A /* TwoDoorHorizontalFrigeTypeView.swift in Sources */,
 				2595B53C27AF6663004084A4 /* OnboardingView.swift in Sources */,
+				252774D827B7E0AD0056122D /* FrigeView.swift in Sources */,
 				2595B53027AF6609004084A4 /* ContentView.swift in Sources */,
 				25C896D827AF7F83000EB3AA /* CornerStyle.swift in Sources */,
 				25B5209727B0EC3D00F31C84 /* TransitionExampleView.swift in Sources */,
+				254F251627BF8E8D0046432A /* ThreeDoorHorizontalFrigeTypeView.swift in Sources */,
+				254F251227BF89B40046432A /* FourDoorUnBalanceFrigeTypeView.swift in Sources */,
 				255B007027B377EF009424CF /* SetUpNickNameView.swift in Sources */,
 				25C896D627AF7E24000EB3AA /* View+Extension.swift in Sources */,
 				25B5209427B0EAE700F31C84 /* TouringServiceFirstView.swift in Sources */,
 				25B5209B27B1038600F31C84 /* NextButton.swift in Sources */,
 				2552ACED27B6813A000DA51F /* ChooseFrigeView.swift in Sources */,
+				254F250E27BF872F0046432A /* FrigeType.swift in Sources */,
 				25C896DA27AF8AD2000EB3AA /* BottomSheetView.swift in Sources */,
 				2595B52E27AF6609004084A4 /* Frige_iOSApp.swift in Sources */,
+				254F251427BF8B740046432A /* ThreeDoorVerticalFrigeTypeView.swift in Sources */,
+				254F251027BF88930046432A /* TwoDoorVerticalFrigeTypeView.swift in Sources */,
+				254F250B27BF83480046432A /* FourDoorBalanceFrigeTypeView.swift in Sources */,
 				25C896D427AF6A9A000EB3AA /* Color+Extension.swift in Sources */,
+				252774D627B7CE3D0056122D /* MainTabView.swift in Sources */,
 				25B5209927B0FB2C00F31C84 /* CustomPageIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +451,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,6 +471,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -395,7 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

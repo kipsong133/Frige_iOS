@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        if showRegisterView {
+        if !showRegisterView {
             
             SetUpNickNameView()
                 .onAppear {
@@ -21,9 +21,9 @@ struct ContentView: View {
                 }
             
         } else {
-            
+            MainTabView()
         }
-        OnboardingView()
+//        OnboardingView()
     }
 }
 

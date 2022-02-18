@@ -20,6 +20,7 @@ extension Color {
     static let darkGray = Color("DarkGray")
     
     static let mangoTwo = Color("Mango-Two")
+    static let selectedMangoColor = Color("SelectedMangoColor")
     static let whiteThree = Color("WhiteThree")
     static let primaryShadow = Color.primary.opacity(0.2)
     static let secondaryText = Color(hex: "#6e6e6e")
